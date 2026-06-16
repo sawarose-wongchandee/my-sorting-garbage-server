@@ -4,7 +4,7 @@ import Phaser from 'phaser';
 import { MainScene } from './game/MainScene';
 
 // เชื่อมต่อไปยังเซิร์ฟเวอร์หลังบ้านพอร์ต 4000
-const socket = io("https://testrobot.onrender.com");
+const socket = io("https://my-sorting-garbage-server.onrender.com");
 
 function App() {
   const [roomCode, setRoomCode] = useState('');
