@@ -141,6 +141,8 @@ io.on('connection', (socket) => {
 });
 
 // เปิดใช้พอร์ต 4000 สำหรับแชร์ข้อมูลแบบผู้เล่นหลายคน
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 4000; 
 
-httpServer.listen(PORT, () => console.log(`Multiplayer Server running on port ${PORT}`));
+server.listen(PORT, '0.0.0.0', () => {
+  console.log(`Server is running on port ${PORT}`);
+});
